@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { assetUrl } from "./assetUrl.js";
 
 function RhpIcon({ name, className = "rhp-icon" }) {
-  return <img className={className} src={`/stack-icons/${name}.svg`} alt="" aria-hidden="true" />;
+  return <img className={className} src={assetUrl(`stack-icons/${name}.svg`)} alt="" aria-hidden="true" />;
 }
 
 export function RhpFieldCell({

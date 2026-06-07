@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import DemoStateToolbar, { PILL_DEMO_STATES } from "./DemoStateToolbar.jsx";
 import SectionHeader from "./SectionHeader.jsx";
+import { assetUrl } from "./assetUrl.js";
 
 function ColorIcon({ name, className = "" }) {
   return (
     <span
       className={`stack-color-icon ${className}`.trim()}
-      style={{ "--stack-color-icon-src": `url("/stack-icons/${name}.svg")` }}
+      style={{ "--stack-color-icon-src": `url("${assetUrl(`stack-icons/${name}.svg`)}")` }}
       aria-hidden="true"
     />
   );
@@ -57,7 +58,7 @@ function SelectionLeadingIcon({ type }) {
 
   if (type === "record") {
     return (
-      <img className="stack-selection-pill__icon stack-selection-pill__icon--record" src="/stack-icons/account.svg" alt="" />
+      <img className="stack-selection-pill__icon stack-selection-pill__icon--record" src={assetUrl("stack-icons/account.svg")} alt="" />
     );
   }
 

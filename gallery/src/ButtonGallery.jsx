@@ -1,16 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import DemoStateToolbar, { BUTTON_DEMO_STATES } from "./DemoStateToolbar.jsx";
 import SectionHeader from "./SectionHeader.jsx";
+import { assetUrl } from "./assetUrl.js";
 
 function Icon({ name, className = "stack-icon", alt = "" }) {
-  return <img className={className} src={`/stack-icons/${name}.svg`} alt={alt} aria-hidden={alt ? undefined : "true"} />;
+  return <img className={className} src={assetUrl(`stack-icons/${name}.svg`)} alt={alt} aria-hidden={alt ? undefined : "true"} />;
 }
 
 function ColorIcon({ name, className = "" }) {
   return (
     <span
       className={`stack-color-icon ${className}`.trim()}
-      style={{ "--stack-color-icon-src": `url("/stack-icons/${name}.svg")` }}
+      style={{ "--stack-color-icon-src": `url("${assetUrl(`stack-icons/${name}.svg`)}")` }}
       aria-hidden="true"
     />
   );

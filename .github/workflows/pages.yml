@@ -24,15 +24,19 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install gallery deps (build only, skip Playwright/sharp)
+      - name: Install gallery deps
         working-directory: gallery
-        run: npm install --omit=dev --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
 
       - name: Build gallery (base path = repo name, for project Pages)
         working-directory: gallery
-        run: npm run build -- --base "/${{ github.event.repository.name }}/"
+        env:
+          VITE_BASE: /${{ github.event.repository.name }}/
+        run: npm run build
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:

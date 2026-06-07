@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SectionHeader from "./SectionHeader.jsx";
+import { assetUrl } from "./assetUrl.js";
 const demoSteps = [
   { id: "context", step: "0", label: "Site Context", current: true },
   { id: "profile", step: "1", label: "Site Profile" },
@@ -30,12 +31,12 @@ export default function PrototypeNavRailGallery() {
           <div className="prototype-rail-top">
             <div className="prototype-rail-brand">
               <img
-                src="/stack-icons/sitetracker-lettermark-white.svg"
+                src={assetUrl("stack-icons/sitetracker-lettermark-white.svg")}
                 alt=""
                 className="prototype-rail-brand-full"
               />
               <img
-                src="/stack-icons/sitetracker-mark.svg"
+                src={assetUrl("stack-icons/sitetracker-mark.svg")}
                 alt=""
                 className="prototype-rail-brand-compact"
               />
@@ -51,7 +52,7 @@ export default function PrototypeNavRailGallery() {
               onClick={() => setCollapsed((current) => !current)}
             >
               <img
-                src="/stack-icons/chevrondown.svg"
+                src={assetUrl("stack-icons/chevrondown.svg")}
                 alt=""
                 className="prototype-rail-toggle-icon"
                 aria-hidden="true"

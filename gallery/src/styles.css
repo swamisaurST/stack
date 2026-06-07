@@ -113,8 +113,8 @@ button:disabled {
 }
 
 .gallery-workspace-intro {
-  margin-bottom: 20px;
-  padding: 16px 20px;
+  margin-bottom: 24px;
+  padding: 24px 28px;
   border: 1px solid var(--stack-border);
   border-radius: 4px;
   background: var(--stack-surface);
@@ -135,6 +135,55 @@ button:disabled {
 
 .gallery-workspace-intro code {
   font-size: 12px;
+}
+
+.gallery-intro-kicker {
+  margin: 0 0 4px;
+  color: var(--stack-brand);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gallery-intro-lead {
+  max-width: 72ch;
+  margin-top: 10px !important;
+  font-size: 14px !important;
+  line-height: 160% !important;
+}
+
+.gallery-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.gallery-intro-card {
+  padding: 14px 16px;
+  border: 1px solid var(--stack-border);
+  border-radius: 4px;
+  background: var(--stack-surface-subtle);
+}
+
+.gallery-intro-card h2 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.gallery-intro-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+@media (max-width: 960px) {
+  .gallery-intro-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gallery-platform-section {

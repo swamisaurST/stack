@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "./Icon.jsx";
+import { assetUrl } from "./assetUrl.js";
 
 const defaultTabs = ["Browse"];
 
@@ -14,7 +15,7 @@ export default function StackShell({
     <header className="product-header" aria-label="STACK web shell">
       <div className="product-top-bar">
         <a className="product-wordmark" href="#top" aria-label="Sitetracker home">
-          <img src="/stack-icons/sitetracker-lettermarks.svg" alt="" />
+          <img src={assetUrl("stack-icons/sitetracker-lettermarks.svg")} alt="" />
         </a>
         <label className="product-search">
           <span className="assistive-text">Global search</span>
@@ -46,7 +47,7 @@ export default function StackShell({
             <Icon name="notification" className="product-action-icon" />
           </button>
           <button className="product-avatar" type="button" aria-label="User profile">
-            <img src="/stack-icons/sitetracker-mark.svg" alt="" />
+            <img src={assetUrl("stack-icons/sitetracker-mark.svg")} alt="" />
           </button>
         </nav>
       </div>

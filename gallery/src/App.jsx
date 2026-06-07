@@ -10,6 +10,7 @@ import Icon from "./Icon.jsx";
 import { iconData } from "./iconData.js";
 
 import { platformForHash } from "./gallerySections.js";
+import { assetUrl } from "./assetUrl.js";
 
 const PLATFORM_STORAGE_KEY = "stack-gallery-platform";
 
@@ -50,7 +51,7 @@ function CatalogIcon({ icon }) {
   return (
     <img
       className="catalog-icon-img"
-      src={`/stack-icons/catalog/${encodeURI(icon.assetPath)}`}
+      src={assetUrl(`stack-icons/catalog/${encodeURI(icon.assetPath)}`)}
       alt=""
       loading="lazy"
       aria-hidden="true"
@@ -95,7 +96,7 @@ function TableGallery() {
       <div className="table-header">
         <div className="table-title-group">
           <span className="table-header-icon" aria-hidden="true">
-            <img className="table-header-icon-img" src="/stack-icons/account.svg" alt="" />
+            <img className="table-header-icon-img" src={assetUrl("stack-icons/account.svg")} alt="" />
           </span>
           <h3 className="table-title">
             Sample Table <span className="table-title-count">({tableRows.length})</span>
@@ -347,7 +348,7 @@ function MobileMainHeader() {
       <div className="mobile-header mobile-header-main">
         <MobileStatusBar />
         <div className="mobile-main-row">
-          <img className="mobile-logo" src="/stack-icons/sitetracker-lettermark-white.svg" alt="Sitetracker" />
+          <img className="mobile-logo" src={assetUrl("stack-icons/sitetracker-lettermark-white.svg")} alt="Sitetracker" />
           <button className="mobile-icon-button mobile-notification" type="button" aria-label="Notifications">
             <Icon name="notification" className="mobile-header-icon" />
           </button>
@@ -456,13 +457,35 @@ export default function App() {
 
         <main className="gallery-workspace prototype-main" id="gallery-workspace">
           <section className="gallery-workspace-intro">
-            <p className="eyebrow">Canonical browser-rendered reference</p>
-            <h1>STACK component specimens</h1>
-            <p>
-              Use the <strong>{activePlatformId === "mobile" ? "Mobile" : "Web"}</strong> tab and navigation rail
-              to jump to a specimen. Markdown references in <code>references/web/</code> and{" "}
-              <code>STACK-MOBILE-DESIGN.md</code> own the rules; this gallery owns rendered proof.
+            <p className="gallery-intro-kicker">Sitetracker AI Consistency Kit</p>
+            <h1>Component library</h1>
+            <p className="gallery-intro-lead">
+              Rendered specimens for Sitetracker web and mobile UI. Each section here is paired with Markdown
+              references in the kit — rules and anatomy in words, pixels in the browser.
             </p>
+            <div className="gallery-intro-grid">
+              <div className="gallery-intro-card">
+                <h2>How to read this</h2>
+                <p>
+                  Pick <strong>{activePlatformId === "mobile" ? "Mobile" : "Web"}</strong> in the left rail, then
+                  jump to a specimen. Load the matching reference file for tokens, spacing, states, and behavior.
+                </p>
+              </div>
+              <div className="gallery-intro-card">
+                <h2>What this is not</h2>
+                <p>
+                  Not a Figma file dump. Not a prompt. Not permission to copy a screen when the job needs a
+                  different hierarchy. References are vocabulary — the framed user job still decides the layout.
+                </p>
+              </div>
+              <div className="gallery-intro-card">
+                <h2>Kit entry</h2>
+                <p>
+                  Agents start at <code>BOOTSTRAP.md</code> and <code>MANIFEST.md</code> in the repo root. Product
+                  designs and prototypes live outside the kit folder.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section {...platformSectionProps("web")} id="web-primitives">

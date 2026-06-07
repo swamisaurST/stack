@@ -1,5 +1,6 @@
 import React from "react";
 import { resolveRailIcon } from "./galleryIcons.js";
+import { assetUrl } from "./assetUrl.js";
 
 /**
  * Utility icon for dark prototype rails — uses CSS mask so hardcoded SVG fills
@@ -11,7 +12,7 @@ export default function RailIcon({ name, className = "prototype-rail-link-icon" 
   return (
     <span
       className={className}
-      style={{ "--rail-icon-src": `url("/stack-icons/${iconName}.svg")` }}
+      style={{ "--rail-icon-src": `url("${assetUrl(`stack-icons/${iconName}.svg`)}")` }}
       aria-hidden="true"
     />
   );

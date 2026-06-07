@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { assetUrl } from "./assetUrl.js";
 import { galleryPlatforms, platformForHash } from "./gallerySections.js";
 import { railIconFor } from "./galleryIcons.js";
 import RailIcon from "./RailIcon.jsx";
@@ -113,11 +114,11 @@ export default function GalleryNavRail({ activePlatformId, onPlatformChange }) {
       <div className="prototype-rail-top">
         <div className="prototype-rail-brand">
           <img
-            src="/stack-icons/sitetracker-lettermark-white.svg"
+            src={assetUrl("stack-icons/sitetracker-lettermark-white.svg")}
             alt=""
             className="prototype-rail-brand-full"
           />
-          <img src="/stack-icons/sitetracker-mark.svg" alt="" className="prototype-rail-brand-compact" />
+          <img src={assetUrl("stack-icons/sitetracker-mark.svg")} alt="" className="prototype-rail-brand-compact" />
         </div>
         <button
           type="button"
