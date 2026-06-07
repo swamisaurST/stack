@@ -15,11 +15,11 @@ Sitetracker AI Consistency Kit
 
 A portable agent kit that makes any AI design **disciplined Sitetracker UI** — in Cursor, Claude Code, Figma, Pencil, React, LWC, Storybook, or Markdown.
 
-[![component library](https://img.shields.io/badge/component%20library-live-1D9E75?style=flat-square)](https://__OWNER__.github.io/__REPO__/)
+[![component library](https://img.shields.io/badge/component%20library-live-1D9E75?style=flat-square)](https://swamisaurST.github.io/stack/)
 [![laws](https://img.shields.io/badge/operating%20laws-11-444?style=flat-square)](LAWS.md)
-[![pages](https://github.com/__OWNER__/__REPO__/actions/workflows/pages.yml/badge.svg)](https://github.com/__OWNER__/__REPO__/actions/workflows/pages.yml)
+[![pages](https://github.com/swamisaurST/stack/actions/workflows/pages.yml/badge.svg)](https://github.com/swamisaurST/stack/actions/workflows/pages.yml)
 
-### ▶ [View the live component library](https://__OWNER__.github.io/__REPO__/)
+### ▶ [View the live component library](https://swamisaurST.github.io/stack/)
 
 *The browser-rendered, canonical Sitetracker components — the source of visual truth.*
 
