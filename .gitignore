@@ -1,0 +1,11 @@
+# dependencies
+node_modules/
+gallery/node_modules/
+
+# build output
+gallery/dist/
+gallery/screenshots/
+
+# os / editor
+.DS_Store
+*.log

@@ -1,0 +1,61 @@
+{
+  "$comment": "Baseline registry for STACK component gallery visual regression. Each section maps a hash route + selector to a committed baseline screenshot. CI runs capture-baselines.mjs --diff to detect drift. Use --update with designer approval to refresh baselines.",
+  "viewport": { "width": 1440, "height": 1400 },
+  "threshold": 0.05,
+  "sections": [
+    {
+      "id": "shell-controls",
+      "hash": "shell",
+      "selector": ".product-global-actions",
+      "baseline": "../baselines/shell-controls-verified-2026-06-07.png"
+    },
+    {
+      "id": "buttons",
+      "hash": "components",
+      "selector": "#components",
+      "baseline": "../baselines/buttons-spacing-verified-2026-06-07.png"
+    },
+    {
+      "id": "card-header",
+      "hash": "card-header",
+      "selector": "#card-header",
+      "baseline": "../baselines/card-header-part-verified-2026-06-07.png"
+    },
+    {
+      "id": "table-sample",
+      "hash": "table-sample",
+      "selector": "#table-sample",
+      "baseline": "../baselines/table-sample-part-verified-2026-06-07.png"
+    },
+    {
+      "id": "list-rows",
+      "hash": "list-rows-sample",
+      "selector": "#list-rows-sample",
+      "baseline": "../baselines/list-rows-part-verified-2026-06-07.png"
+    },
+    {
+      "id": "layouts",
+      "hash": "layouts",
+      "selector": "#layout-models",
+      "baseline": "../baselines/layouts-part-verified-2026-06-07.png"
+    },
+    {
+      "id": "right-hand-panel",
+      "hash": "right-hand-panel",
+      "selector": "#right-hand-panel",
+      "baseline": "../baselines/rhp-gallery-card-verified-2026-06-07.png"
+    },
+    {
+      "id": "prototype-nav-rail",
+      "hash": "prototype-nav-rail",
+      "selector": "#prototype-nav-rail",
+      "baseline": "../baselines/prototype-nav-rail-part-verified-2026-06-07.png"
+    },
+    {
+      "id": "mobile-headers",
+      "hash": "mobile",
+      "selector": "#mobile .mobile-preview-grid",
+      "baseline": "../baselines/mobile-headers-part-verified-2026-06-07.png"
+    }
+  ]
+}

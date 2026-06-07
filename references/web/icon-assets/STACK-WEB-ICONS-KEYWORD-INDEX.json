@@ -1,0 +1,258 @@
+{
+  "$schema": "STACK-WEB-ICONS-KEYWORD-INDEX",
+  "status": "Draft",
+  "lastUpdated": "2026-06-07",
+  "purpose": "Narrow keyword to candidate icon rows for the most common workflow intents. Use this index instead of loading STACK-WEB-ICONS-DATABASE.csv in full. Visual verification is still required before locking any icon.",
+  "rules": [
+    "Pick a candidate by intent.",
+    "Visually verify the candidate against the intended UI context before placing it.",
+    "Fall back to a narrow keyword grep on STACK-WEB-ICONS-DATABASE.csv with head_limit <= 20 when this index lacks the intent.",
+    "Do not load the full CSV.",
+    "Shell-control intents are in STACK-WEB-GLOBAL-HEADER.md and STACK-WEB-QUICK-DECISIONS.md, not here."
+  ],
+  "intents": {
+    "create": [
+      { "name": "Utility Icons / A / add", "iconName": "add", "nodeId": "1518:28618", "assetPath": "icon-assets/exported-svg/Utility Icons/A/add.svg", "useTier": "primary" },
+      { "name": "Utility Icons / N / new", "iconName": "new", "nodeId": "1518:28998", "assetPath": "icon-assets/exported-svg/Utility Icons/N/new.svg", "useTier": "primary" }
+    ],
+    "edit": [
+      { "name": "Utility Icons / E / edit", "iconName": "edit", "nodeId": "1518:28808", "assetPath": "icon-assets/exported-svg/Utility Icons/E/edit.svg", "useTier": "primary" }
+    ],
+    "delete": [
+      { "name": "Utility Icons / D / delete", "iconName": "delete", "nodeId": "1518:28780", "assetPath": "icon-assets/exported-svg/Utility Icons/D/delete.svg", "useTier": "primary" }
+    ],
+    "search": [
+      { "name": "Utility Icons / S / search", "iconName": "search", "nodeId": "1518:29174", "assetPath": "icon-assets/exported-svg/Utility Icons/S/search.svg", "useTier": "primary" }
+    ],
+    "filter": [
+      { "name": "Utility Icons / F / filter", "iconName": "filter", "nodeId": "1518:28848", "assetPath": "icon-assets/exported-svg/Utility Icons/F/filter.svg", "useTier": "primary" }
+    ],
+    "sort": [
+      { "name": "Utility Icons / S / sort", "iconName": "sort", "nodeId": "1518:29222", "assetPath": "icon-assets/exported-svg/Utility Icons/S/sort.svg", "useTier": "primary" }
+    ],
+    "download": [
+      { "name": "Utility Icons / D / download", "iconName": "download", "nodeId": "1518:28800", "assetPath": "icon-assets/exported-svg/Utility Icons/D/download.svg", "useTier": "primary" }
+    ],
+    "upload": [
+      { "name": "Utility Icons / U / upload", "iconName": "upload", "nodeId": "1518:29330", "assetPath": "icon-assets/exported-svg/Utility Icons/U/upload.svg", "useTier": "primary" }
+    ],
+    "copy": [
+      { "name": "Utility Icons / C / copy", "iconName": "copy", "nodeId": "1518:28754", "assetPath": "icon-assets/exported-svg/Utility Icons/C/copy.svg", "useTier": "primary" }
+    ],
+    "save": [
+      { "name": "Utility Icons / S / save", "iconName": "save", "nodeId": "1518:29170", "assetPath": "icon-assets/exported-svg/Utility Icons/S/save.svg", "useTier": "primary" }
+    ],
+    "refresh": [
+      { "name": "Utility Icons / R / refresh", "iconName": "refresh", "nodeId": "1518:29118", "assetPath": "icon-assets/exported-svg/Utility Icons/R/refresh.svg", "useTier": "primary" },
+      { "name": "Utility Icons / S / sync", "iconName": "sync", "nodeId": "1518:29252", "assetPath": "icon-assets/exported-svg/Utility Icons/S/sync.svg", "useTier": "primary" }
+    ],
+    "undoRedo": [
+      { "name": "Utility Icons / U / undo", "iconName": "undo", "nodeId": "1518:29320", "assetPath": "icon-assets/exported-svg/Utility Icons/U/undo.svg", "useTier": "primary" },
+      { "name": "Utility Icons / R / redo", "iconName": "redo", "nodeId": "1518:29116", "assetPath": "icon-assets/exported-svg/Utility Icons/R/redo.svg", "useTier": "primary" }
+    ],
+    "share": [
+      { "name": "Utility Icons / S / share", "iconName": "share", "nodeId": "1518:29190", "assetPath": "icon-assets/exported-svg/Utility Icons/S/share.svg", "useTier": "primary" }
+    ],
+    "link": [
+      { "name": "Utility Icons / L / link", "iconName": "link", "nodeId": "1518:28942", "assetPath": "icon-assets/exported-svg/Utility Icons/L/link.svg", "useTier": "primary" }
+    ],
+    "attach": [
+      { "name": "Utility Icons / A / attach", "iconName": "attach", "nodeId": "1518:28658", "assetPath": "icon-assets/exported-svg/Utility Icons/A/attach.svg", "useTier": "primary" }
+    ],
+    "preview": [
+      { "name": "Utility Icons / P / preview", "iconName": "preview", "nodeId": "1518:29076", "assetPath": "icon-assets/exported-svg/Utility Icons/P/preview.svg", "useTier": "primary" }
+    ],
+    "print": [
+      { "name": "Utility Icons / P / print", "iconName": "print", "nodeId": "1518:29078", "assetPath": "icon-assets/exported-svg/Utility Icons/P/print.svg", "useTier": "primary" }
+    ],
+    "send": [
+      { "name": "Utility Icons / S / send", "iconName": "send", "nodeId": "1518:29176", "assetPath": "icon-assets/exported-svg/Utility Icons/S/send.svg", "useTier": "primary" }
+    ],
+    "reply": [
+      { "name": "Utility Icons / R / reply", "iconName": "reply", "nodeId": "1518:29130", "assetPath": "icon-assets/exported-svg/Utility Icons/R/reply.svg", "useTier": "primary" }
+    ],
+    "chat": [
+      { "name": "Utility Icons / C / chat", "iconName": "chat", "nodeId": "1518:28708", "assetPath": "icon-assets/exported-svg/Utility Icons/C/chat.svg", "useTier": "primary" }
+    ],
+    "email": [
+      { "name": "Utility Icons / E / email", "iconName": "email", "nodeId": "1518:28814", "assetPath": "icon-assets/exported-svg/Utility Icons/E/email.svg", "useTier": "primary" }
+    ],
+    "note": [
+      { "name": "Utility Icons / N / note", "iconName": "note", "nodeId": "1518:29006", "assetPath": "icon-assets/exported-svg/Utility Icons/N/note.svg", "useTier": "primary" }
+    ],
+    "approval": [
+      { "name": "Utility Icons / A / approval", "iconName": "approval", "nodeId": "1518:28646", "assetPath": "icon-assets/exported-svg/Utility Icons/A/approval.svg", "useTier": "primary" }
+    ],
+    "warning": [
+      { "name": "Utility Icons / W / warning", "iconName": "warning", "nodeId": "1518:29350", "assetPath": "icon-assets/exported-svg/Utility Icons/W/warning.svg", "useTier": "primary" }
+    ],
+    "error": [
+      { "name": "Utility Icons / E / error", "iconName": "error", "nodeId": "1518:28828", "assetPath": "icon-assets/exported-svg/Utility Icons/E/error.svg", "useTier": "primary" }
+    ],
+    "info": [
+      { "name": "Utility Icons / I / info", "iconName": "info", "nodeId": "1518:28896", "assetPath": "icon-assets/exported-svg/Utility Icons/I/info.svg", "useTier": "primary" }
+    ],
+    "success": [
+      { "name": "Utility Icons / C / check", "iconName": "check", "nodeId": "1518:28712", "assetPath": "icon-assets/exported-svg/Utility Icons/C/check.svg", "useTier": "primary" }
+    ],
+    "close": [
+      { "name": "Utility Icons / C / close", "iconName": "close", "nodeId": "1518:28732", "assetPath": "icon-assets/exported-svg/Utility Icons/C/close.svg", "useTier": "primary" }
+    ],
+    "favorite": [
+      { "name": "Utility Icons / F / favorite", "iconName": "favorite", "nodeId": "1518:28842", "assetPath": "icon-assets/exported-svg/Utility Icons/F/favorite.svg", "useTier": "primary" },
+      { "name": "Utility Icons / B / bookmark", "iconName": "bookmark", "nodeId": "1518:28672", "assetPath": "icon-assets/exported-svg/Utility Icons/B/bookmark.svg", "useTier": "primary" }
+    ],
+    "notification": [
+      { "name": "Utility Icons / N / notification", "iconName": "notification", "nodeId": "1518:29010", "assetPath": "icon-assets/exported-svg/Utility Icons/N/notification.svg", "useTier": "primary" }
+    ],
+    "settings": [
+      { "name": "Utility Icons / S / settings", "iconName": "settings", "nodeId": "1518:29182", "assetPath": "icon-assets/exported-svg/Utility Icons/S/settings.svg", "useTier": "primary" },
+      { "name": "Utility Icons / S / setup", "iconName": "setup", "nodeId": "1518:29184", "assetPath": "icon-assets/exported-svg/Utility Icons/S/setup.svg", "useTier": "primary" }
+    ],
+    "help": [
+      { "name": "Utility Icons / Q / question", "iconName": "question", "nodeId": "1518:29090", "assetPath": "icon-assets/exported-svg/Utility Icons/Q/question.svg", "useTier": "primary" }
+    ],
+    "more": [
+      { "name": "Utility Icons / T / threedots", "iconName": "threedots", "nodeId": "1518:29278", "assetPath": "icon-assets/exported-svg/Utility Icons/T/threedots.svg", "useTier": "primary" }
+    ],
+    "menu": [
+      { "name": "Utility Icons / A / apps", "iconName": "apps", "nodeId": "1518:28648", "assetPath": "icon-assets/exported-svg/Utility Icons/A/apps.svg", "useTier": "primary" },
+      { "name": "Utility Icons / R / rows", "iconName": "rows", "nodeId": "1518:29164", "assetPath": "icon-assets/exported-svg/Utility Icons/R/rows.svg", "useTier": "primary" }
+    ],
+    "expand": [
+      { "name": "Utility Icons / E / expand", "iconName": "expand", "nodeId": "1518:28834", "assetPath": "icon-assets/exported-svg/Utility Icons/E/expand.svg", "useTier": "primary" }
+    ],
+    "calendar": [
+      { "name": "Utility Icons / D / date_input", "iconName": "date_input", "nodeId": "1518:28774", "assetPath": "icon-assets/exported-svg/Utility Icons/D/date_input.svg", "useTier": "primary" },
+      { "name": "Utility Icons / D / date_time", "iconName": "date_time", "nodeId": "1518:28776", "assetPath": "icon-assets/exported-svg/Utility Icons/D/date_time.svg", "useTier": "primary" }
+    ],
+    "clock": [
+      { "name": "Utility Icons / C / clock", "iconName": "clock", "nodeId": "1518:28730", "assetPath": "icon-assets/exported-svg/Utility Icons/C/clock.svg", "useTier": "primary" }
+    ],
+    "lock": [
+      { "name": "Utility Icons / L / lock", "iconName": "lock", "nodeId": "1518:28954", "assetPath": "icon-assets/exported-svg/Utility Icons/L/lock.svg", "useTier": "primary" },
+      { "name": "Utility Icons / P / password", "iconName": "password", "nodeId": "1518:29044", "assetPath": "icon-assets/exported-svg/Utility Icons/P/password.svg", "useTier": "primary" }
+    ],
+    "user": [
+      { "name": "Utility Icons / U / user", "iconName": "user", "nodeId": "1518:29332", "assetPath": "icon-assets/exported-svg/Utility Icons/U/user.svg", "useTier": "primary" },
+      { "name": "Standard Icons / U / user", "iconName": "user", "nodeId": "1518:27914", "assetPath": "icon-assets/exported-svg/Standard Icons/U/user.svg", "useTier": "primary" }
+    ],
+    "home": [
+      { "name": "Utility Icons / H / home", "iconName": "home", "nodeId": "1518:28884", "assetPath": "icon-assets/exported-svg/Utility Icons/H/home.svg", "useTier": "primary" },
+      { "name": "Standard Icons / H / home", "iconName": "home", "nodeId": "1518:27629", "assetPath": "icon-assets/exported-svg/Standard Icons/H/home.svg", "useTier": "primary" }
+    ],
+    "file": [
+      { "name": "Utility Icons / F / file", "iconName": "file", "nodeId": "1518:28846", "assetPath": "icon-assets/exported-svg/Utility Icons/F/file.svg", "useTier": "primary" }
+    ],
+    "image": [
+      { "name": "Utility Icons / I / image", "iconName": "image", "nodeId": "1518:28888", "assetPath": "icon-assets/exported-svg/Utility Icons/I/image.svg", "useTier": "primary" }
+    ],
+    "table": [
+      { "name": "Utility Icons / T / table_settings", "iconName": "table_settings", "nodeId": "1518:29360", "assetPath": "icon-assets/exported-svg/Utility Icons/T/table_settings.svg", "useTier": "primary" },
+      { "name": "Utility Icons / R / rows", "iconName": "rows", "nodeId": "1518:29164", "assetPath": "icon-assets/exported-svg/Utility Icons/R/rows.svg", "useTier": "primary" }
+    ],
+    "chart": [
+      { "name": "Utility Icons / C / chart", "iconName": "chart", "nodeId": "1518:28706", "assetPath": "icon-assets/exported-svg/Utility Icons/C/chart.svg", "useTier": "primary" },
+      { "name": "Utility Icons / G / graph", "iconName": "graph", "nodeId": "1518:28870", "assetPath": "icon-assets/exported-svg/Utility Icons/G/graph.svg", "useTier": "primary" }
+    ],
+    "kanban": [
+      { "name": "Utility Icons / K / kanban", "iconName": "kanban", "nodeId": "1518:28916", "assetPath": "icon-assets/exported-svg/Utility Icons/K/kanban.svg", "useTier": "primary" }
+    ],
+    "task": [
+      { "name": "Utility Icons / T / task", "iconName": "task", "nodeId": "1518:29264", "assetPath": "icon-assets/exported-svg/Utility Icons/T/task.svg", "useTier": "primary" },
+      { "name": "Standard Icons / T / task", "iconName": "task", "nodeId": "1518:27405", "assetPath": "icon-assets/exported-svg/Standard Icons/T/task.svg", "useTier": "primary" }
+    ],
+    "location": [
+      { "name": "Utility Icons / L / location", "iconName": "location", "nodeId": "1518:28952", "assetPath": "icon-assets/exported-svg/Utility Icons/L/location.svg", "useTier": "primary" },
+      { "name": "Standard Icons / L / location", "iconName": "location", "nodeId": "1518:27672", "assetPath": "icon-assets/exported-svg/Standard Icons/L/location.svg", "useTier": "primary" },
+      { "name": "Standard Icons / A / address", "iconName": "address", "nodeId": "1518:27421", "assetPath": "icon-assets/exported-svg/Standard Icons/A/address.svg", "useTier": "primary" }
+    ],
+    "world": [
+      { "name": "Utility Icons / W / world", "iconName": "world", "nodeId": "1518:29420", "assetPath": "icon-assets/exported-svg/Utility Icons/W/world.svg", "useTier": "primary" }
+    ],
+    "wifi": [
+      { "name": "Utility Icons / W / wifi", "iconName": "wifi", "nodeId": "1518:29416", "assetPath": "icon-assets/exported-svg/Utility Icons/W/wifi.svg", "useTier": "primary" }
+    ],
+    "priority": [
+      { "name": "Utility Icons / P / priority", "iconName": "priority", "nodeId": "1518:29080", "assetPath": "icon-assets/exported-svg/Utility Icons/P/priority.svg", "useTier": "primary" }
+    ],
+    "advanced": [
+      { "name": "Utility Icons / A / advanced_function", "iconName": "advanced_function", "nodeId": "1518:28622", "assetPath": "icon-assets/exported-svg/Utility Icons/A/advanced_function.svg", "useTier": "primary" }
+    ],
+    "connectedApps": [
+      { "name": "Utility Icons / C / connected_apps", "iconName": "connected_apps", "nodeId": "1518:28744", "assetPath": "icon-assets/exported-svg/Utility Icons/C/connected_apps.svg", "useTier": "primary" }
+    ],
+    "trailhead": [
+      { "name": "Utility Icons / T / trailhead", "iconName": "trailhead", "nodeId": "1518:29304", "assetPath": "icon-assets/exported-svg/Utility Icons/T/trailhead.svg", "useTier": "primary" }
+    ],
+    "directionDown": [
+      { "name": "Utility Icons / D / down", "iconName": "down", "nodeId": "1518:28798", "assetPath": "icon-assets/exported-svg/Utility Icons/D/down.svg", "useTier": "primary" },
+      { "name": "Utility Icons / C / chevrondown", "iconName": "chevrondown", "nodeId": "1518:28716", "assetPath": "icon-assets/exported-svg/Utility Icons/C/chevrondown.svg", "useTier": "primary" },
+      { "name": "Utility Icons / A / arrowdown", "iconName": "arrowdown", "nodeId": "1518:28652", "assetPath": "icon-assets/exported-svg/Utility Icons/A/arrowdown.svg", "useTier": "primary" }
+    ],
+    "directionUp": [
+      { "name": "Utility Icons / U / up", "iconName": "up", "nodeId": "1518:29328", "assetPath": "icon-assets/exported-svg/Utility Icons/U/up.svg", "useTier": "primary" },
+      { "name": "Utility Icons / C / chevronup", "iconName": "chevronup", "nodeId": "1518:28722", "assetPath": "icon-assets/exported-svg/Utility Icons/C/chevronup.svg", "useTier": "primary" },
+      { "name": "Utility Icons / A / arrowup", "iconName": "arrowup", "nodeId": "1518:28654", "assetPath": "icon-assets/exported-svg/Utility Icons/A/arrowup.svg", "useTier": "primary" }
+    ],
+    "directionLeft": [
+      { "name": "Utility Icons / L / left", "iconName": "left", "nodeId": "1518:28928", "assetPath": "icon-assets/exported-svg/Utility Icons/L/left.svg", "useTier": "primary" },
+      { "name": "Utility Icons / C / chevronleft", "iconName": "chevronleft", "nodeId": "1518:28718", "assetPath": "icon-assets/exported-svg/Utility Icons/C/chevronleft.svg", "useTier": "primary" }
+    ],
+    "directionRight": [
+      { "name": "Utility Icons / R / right", "iconName": "right", "nodeId": "1518:29156", "assetPath": "icon-assets/exported-svg/Utility Icons/R/right.svg", "useTier": "primary" },
+      { "name": "Utility Icons / C / chevronright", "iconName": "chevronright", "nodeId": "1518:28720", "assetPath": "icon-assets/exported-svg/Utility Icons/C/chevronright.svg", "useTier": "primary" }
+    ],
+    "entity.account": [
+      { "name": "Standard Icons / A / account", "iconName": "account", "nodeId": "1518:27417", "assetPath": "icon-assets/exported-svg/Standard Icons/A/account.svg", "useTier": "primary" }
+    ],
+    "entity.opportunity": [
+      { "name": "Standard Icons / O / opportunity", "iconName": "opportunity", "nodeId": "1518:27712", "assetPath": "icon-assets/exported-svg/Standard Icons/O/opportunity.svg", "useTier": "primary" }
+    ],
+    "entity.case": [
+      { "name": "Standard Icons / C / case", "iconName": "case", "nodeId": "1518:27497", "assetPath": "icon-assets/exported-svg/Standard Icons/C/case.svg", "useTier": "primary" },
+      { "name": "Utility Icons / C / case", "iconName": "case", "nodeId": "1518:28696", "assetPath": "icon-assets/exported-svg/Utility Icons/C/case.svg", "useTier": "primary" }
+    ],
+    "entity.contact": [
+      { "name": "Standard Icons / C / contact", "iconName": "contact", "nodeId": "1518:27345", "assetPath": "icon-assets/exported-svg/Standard Icons/C/contact.svg", "useTier": "primary" }
+    ],
+    "entity.product": [
+      { "name": "Standard Icons / P / product", "iconName": "product", "nodeId": "1518:27758", "assetPath": "icon-assets/exported-svg/Standard Icons/P/product.svg", "useTier": "primary" }
+    ],
+    "entity.event": [
+      { "name": "Standard Icons / E / event", "iconName": "event", "nodeId": "1518:27593", "assetPath": "icon-assets/exported-svg/Standard Icons/E/event.svg", "useTier": "primary" }
+    ],
+    "entity.workOrder": [
+      { "name": "Standard Icons / W / work_order", "iconName": "work_order", "nodeId": "1518:27934", "assetPath": "icon-assets/exported-svg/Standard Icons/W/work_order.svg", "useTier": "primary" },
+      { "name": "Standard Icons / W / work_type", "iconName": "work_type", "nodeId": "1518:27938", "assetPath": "icon-assets/exported-svg/Standard Icons/W/work_type.svg", "useTier": "primary" }
+    ],
+    "entity.serviceAppointment": [
+      { "name": "Standard Icons / S / service_appointment", "iconName": "service_appointment", "nodeId": "1518:27822", "assetPath": "icon-assets/exported-svg/Standard Icons/S/service_appointment.svg", "useTier": "primary" }
+    ],
+    "entity.serviceContract": [
+      { "name": "Standard Icons / S / service_contract", "iconName": "service_contract", "nodeId": "1518:27401", "assetPath": "icon-assets/exported-svg/Standard Icons/S/service_contract.svg", "useTier": "primary" }
+    ],
+    "entity.orders": [
+      { "name": "Standard Icons / O / orders", "iconName": "orders", "nodeId": "1518:27716", "assetPath": "icon-assets/exported-svg/Standard Icons/O/orders.svg", "useTier": "primary" }
+    ],
+    "entity.forecasts": [
+      { "name": "Standard Icons / F / forecasts", "iconName": "forecasts", "nodeId": "1518:27611", "assetPath": "icon-assets/exported-svg/Standard Icons/F/forecasts.svg", "useTier": "primary" }
+    ],
+    "entity.customer360": [
+      { "name": "Standard Icons / C / customer_360", "iconName": "customer_360", "nodeId": "1518:27537", "assetPath": "icon-assets/exported-svg/Standard Icons/C/customer_360.svg", "useTier": "primary" }
+    ]
+  },
+  "fallback": {
+    "narrowGrep": "Use Grep on STACK-WEB-ICONS-DATABASE.csv with a single keyword and head_limit <= 20.",
+    "examplePattern": "^Utility Icons / [A-Z] / <intent>",
+    "iconReference": "STACK-WEB-ICONS.md describes the database protocol and search rules.",
+    "shellIcons": "STACK-WEB-GLOBAL-HEADER.md and STACK-WEB-QUICK-DECISIONS.md own the locked shell icon map."
+  },
+  "verificationResult": {
+    "status": "Draft",
+    "sourceChecked": "Yes. All rows extracted from STACK-WEB-ICONS-DATABASE.csv on 2026-06-07.",
+    "visualParityChecked": "No. Each candidate still requires visual verification in the intended UI context.",
+    "designerApproval": "Pending",
+    "canonicalDate": "Pending"
+  }
+}

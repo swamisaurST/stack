@@ -1,0 +1,15 @@
+{
+  "total": 1087,
+  "byTier": {
+    "primary": 790,
+    "secondary": 184,
+    "restricted": 113
+  },
+  "byCategory": {
+    "Doctype Icons": 38,
+    "Standard Icons": 341,
+    "Utility Icons": 411,
+    "Action Icons": 184,
+    "Custom Icons": 113
+  }
+}
