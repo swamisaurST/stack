@@ -5,6 +5,7 @@ export const GALLERY_SPECIMEN_ICONS = {
   colors: "palette",
   typography: "text_color",
   "icon-catalog": "list",
+  shell: "home",
   components: "add",
   pills: "check",
   "path-stages": "chevronright",

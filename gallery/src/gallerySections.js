@@ -9,6 +9,18 @@ export const galleryPlatforms = [
     label: "Web",
     sections: [
       {
+        id: "web-header",
+        title: "Web shell",
+        description: "Sitetracker global header and title row",
+        items: [
+          {
+            id: "shell",
+            label: "Header shell",
+            reference: "STACK-WEB-GLOBAL-HEADER",
+          },
+        ],
+      },
+      {
         id: "web-primitives",
         title: "Foundations",
         description: "Color, type, and icon vocabulary",

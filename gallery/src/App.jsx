@@ -6,6 +6,7 @@ import RightHandPanelGallery from "./RightHandPanelGallery.jsx";
 import PrototypeNavRailGallery from "./PrototypeNavRailGallery.jsx";
 import GalleryNavRail from "./GalleryNavRail.jsx";
 import SectionHeader from "./SectionHeader.jsx";
+import StackShell from "./StackShell.jsx";
 import Icon from "./Icon.jsx";
 import { iconData } from "./iconData.js";
 
@@ -42,9 +43,9 @@ const tableRows = [
 ];
 
 const listRows = [
-  ["Web shell header locked", "Header shell", "Canonical"],
-  ["Confirm card icon container", "Section headers", "Pending"],
-  ["Check row icon density", "Lists", "Ready"],
+  ["T-1042", "Field crew checklist", "Ready"],
+  ["T-1043", "Permit photo review", "Ready"],
+  ["T-1044", "Closeout package", "Pending"],
 ];
 
 function CatalogIcon({ icon }) {
@@ -71,6 +72,14 @@ function StatusTag({ children, tone = "neutral" }) {
     <span className={`stack-badge-pill stack-badge-pill--${variant}`}>
       <span className="stack-badge-pill__label">{children}</span>
     </span>
+  );
+}
+
+function WebHeaderGallery() {
+  return (
+    <div className="shell-specimen component-card-wide" id="shell">
+      <StackShell pageTitle="Page Title" tabs={["Tab 1", "Tab 2", "Tab 3"]} activeTabIndex={0} />
+    </div>
   );
 }
 
@@ -485,6 +494,16 @@ export default function App() {
                   designs and prototypes live outside the kit folder.
                 </p>
               </div>
+            </div>
+          </section>
+
+          <section {...platformSectionProps("web")} id="web-header">
+            <header className="gallery-platform-head">
+              <h2>Web shell</h2>
+              <p>Sitetracker global header with search, locked controls, and title row.</p>
+            </header>
+            <div className="gallery-section">
+              <WebHeaderGallery />
             </div>
           </section>
 

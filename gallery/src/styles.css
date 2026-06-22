@@ -452,6 +452,18 @@ button:disabled {
   height: 12px;
 }
 
+.shell-specimen,
+.layout-gallery {
+  scroll-margin-top: 24px;
+}
+
+.shell-specimen {
+  overflow: hidden;
+  border: 1px solid var(--stack-border);
+  border-radius: 4px;
+  background: var(--stack-surface);
+}
+
 .shell-preview {
   overflow: hidden;
   border: 1px solid var(--stack-border);
