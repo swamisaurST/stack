@@ -3,6 +3,8 @@ import ButtonGallery from "./ButtonGallery.jsx";
 import PathStagesGallery from "./PathStagesGallery.jsx";
 import PillGallery from "./PillGallery.jsx";
 import RightHandPanelGallery from "./RightHandPanelGallery.jsx";
+import WorkspaceGallery from "./WorkspaceGallery.jsx";
+import InfoBanner from "./InfoBanner.jsx";
 import PrototypeNavRailGallery from "./PrototypeNavRailGallery.jsx";
 import GalleryNavRail from "./GalleryNavRail.jsx";
 import SectionHeader from "./SectionHeader.jsx";
@@ -65,6 +67,7 @@ function StatusTag({ children, tone = "neutral" }) {
     neutral: "default",
     warning: "warning",
     success: "success",
+    error: "error",
   };
   const variant = variantByTone[tone] || "default";
 
@@ -102,6 +105,9 @@ function CardHeaderGallery() {
 function TableGallery() {
   return (
     <div className="table-shell component-card-wide" id="table-sample">
+      <InfoBanner title="Information title">
+        Supporting copy for a dismissible workspace banner.
+      </InfoBanner>
       <div className="table-header">
         <div className="table-title-group">
           <span className="table-header-icon" aria-hidden="true">
@@ -131,21 +137,29 @@ function TableGallery() {
           </tr>
         </thead>
         <tbody>
-          {tableRows.map((row) => (
-            <tr key={row[0]}>
-              <td className="select-col">
-                <span className="checkbox-shell" aria-hidden="true" />
-              </td>
-              {row.map((cell) => (
-                <td key={cell}>{cell}</td>
-              ))}
-              <td className="action-col">
-                <button className="row-action" type="button" aria-label={`Edit ${row[0]}`}>
-                  <Icon name="edit" className="row-action-icon" />
-                </button>
-              </td>
-            </tr>
-          ))}
+          {tableRows.map((row) => {
+            const [id, name, status, due] = row;
+            return (
+              <tr key={id}>
+                <td className="select-col">
+                  <span className="checkbox-shell" aria-hidden="true" />
+                </td>
+                <td>{id}</td>
+                <td>
+                  <a className="stack-link" href="#table-sample">
+                    {name}
+                  </a>
+                </td>
+                <td>{status}</td>
+                <td>{due}</td>
+                <td className="action-col">
+                  <button className="row-action" type="button" aria-label={`Edit ${id}`}>
+                    <Icon name="edit" className="row-action-icon" />
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
       <div className="table-footer">
@@ -551,6 +565,7 @@ export default function App() {
               <p>Workspace splits and record context panel.</p>
             </header>
             <div className="gallery-section">
+              <WorkspaceGallery />
               <div id="layouts">
                 <LayoutGallery />
               </div>

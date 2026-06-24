@@ -55,6 +55,7 @@ export const galleryPlatforms = [
         title: "Page layout",
         description: "Workspace splits and side panel",
         items: [
+          { id: "record-workspace", label: "Record workspace", reference: "STACK-WEB-LAYOUT" },
           { id: "layouts", label: "Workspace splits", reference: "STACK-WEB-LAYOUT" },
           {
             id: "right-hand-panel",

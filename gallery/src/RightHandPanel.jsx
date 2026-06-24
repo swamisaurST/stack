@@ -155,9 +155,9 @@ function renderSection(section) {
 
 /** Read-only gallery specimen — agents can reuse this shape for record panels. */
 export const RHP_SPECIMEN = {
-  eyebrow: "Activity",
-  title: "Environmental Permit",
-  objectIcon: "task",
+  eyebrow: "Object",
+  title: "Record title",
+  objectIcon: "page",
   tabs: ["Details", "Related Lists"],
   defaultTab: "Details",
   tabContent: {
@@ -166,17 +166,17 @@ export const RHP_SPECIMEN = {
         {
           title: "General",
           fields: [
-            { type: "text", label: "Permit Name", value: "MT Fish and Wildlife" },
-            { type: "text", label: "Permit Status", value: "Draft" },
+            { type: "text", label: "Field name", value: "Field value" },
+            { type: "text", label: "Status", value: "Draft" },
             {
               type: "link",
-              label: "Permit Authority",
-              value: "MT Fish & Wildlife",
+              label: "Lookup field",
+              value: "Related record",
               href: "#right-hand-panel",
             },
-            { type: "text", label: "Permit Type", value: "Environmental - Forestry", hasHelp: true },
-            { type: "text", label: "Permit Owner", value: "Jacob Ray", href: "#right-hand-panel" },
-            { type: "text", label: "Permit Notes", value: "", empty: true, editable: true },
+            { type: "text", label: "Type", value: "Category value", hasHelp: true },
+            { type: "text", label: "Owner", value: "User name", href: "#right-hand-panel" },
+            { type: "text", label: "Notes", value: "", empty: true, editable: true },
           ],
         },
         {
@@ -185,13 +185,13 @@ export const RHP_SPECIMEN = {
             {
               type: "audit",
               label: "Last Modified By",
-              user: "Brittney Cruz",
+              user: "Saurabh Swami",
               timestamp: "12/04/23 12:35 PM",
             },
             {
               type: "audit",
               label: "Created By",
-              user: "Brittney Cruz",
+              user: "Saurabh Swami",
               timestamp: "12/04/23 12:35 PM",
             },
           ],

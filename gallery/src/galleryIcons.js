@@ -13,6 +13,7 @@ export const GALLERY_SPECIMEN_ICONS = {
   "table-sample": "table",
   "list-rows-sample": "list",
   layouts: "layout",
+  "record-workspace": "layout",
   "right-hand-panel": "toggle-panel-right",
   "prototype-nav-rail": "apps",
   "mobile-main-header": "apps",

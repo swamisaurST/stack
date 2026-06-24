@@ -17,6 +17,7 @@
   --stack-disabled: #c9c7c5;
   --stack-focus-ring: #1b96ff;
   --stack-warning: #844800;
+  --stack-link: #00847c;
   --stack-section-title-size: 13px;
   --stack-section-title-line-height: 20px;
   --stack-section-title-weight: 600;
@@ -657,7 +658,7 @@ button:disabled {
   align-items: stretch;
   height: 40px;
   margin-top: 4px;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 .product-app-launcher {
@@ -675,9 +676,9 @@ button:disabled {
   display: inline-flex;
   align-items: center;
   height: 40px;
-  margin: 0 0 0 24px;
+  margin: 0 24px;
   color: #080707;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 40px;
   white-space: nowrap;
@@ -735,8 +736,8 @@ button:disabled {
 }
 
 .product-edit-icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 .section-header {
@@ -1483,7 +1484,7 @@ button:disabled {
   min-height: 56px;
   padding: 12px 16px;
   border-bottom: 1px solid var(--stack-border);
-  background: var(--stack-surface-section);
+  background: var(--stack-surface);
 }
 
 .table-title-group {
@@ -1572,9 +1573,9 @@ td {
   width: 16px;
   height: 16px;
   padding: 0;
-  border: 1px solid var(--stack-border);
+  border: 0;
   border-radius: 4px;
-  background: var(--stack-surface);
+  background: transparent;
   color: var(--stack-placeholder);
 }
 
@@ -2389,7 +2390,7 @@ td {
   gap: 14px;
   padding: 16px;
   border-bottom: 1px solid var(--stack-border);
-  background: var(--stack-surface-section);
+  background: var(--stack-surface);
 }
 
 .rhp-header-main {
@@ -3341,4 +3342,112 @@ td {
   color: var(--stack-text-weak);
   font-size: 13px;
   text-align: center;
+}
+
+.stack-link {
+  color: var(--stack-link);
+  text-decoration: none;
+  font: inherit;
+}
+
+.stack-link:hover {
+  text-decoration: underline;
+}
+
+.stack-info-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--stack-border);
+  border-radius: 4px;
+  background: var(--stack-surface-section);
+}
+
+.table-shell > .stack-info-banner {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.stack-info-banner-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.stack-info-banner-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.stack-info-banner-copy strong {
+  color: var(--stack-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.stack-info-banner-copy span {
+  color: var(--stack-text-weak);
+  font-size: 12px;
+}
+
+.stack-info-banner .stack-button {
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+
+.workspace-gallery-card {
+  overflow: hidden;
+}
+
+.workspace-gallery-card .workspace-specimen {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.workspace-specimen {
+  overflow: hidden;
+  border: 1px solid var(--stack-border);
+  border-radius: 4px;
+  background: var(--stack-surface-section);
+}
+
+.workspace-specimen-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 20px 28px;
+}
+
+.workspace-path-shell {
+  padding: 10px 12px;
+  border: 1px solid var(--stack-border);
+  border-radius: 4px;
+  background: var(--stack-surface);
+}
+
+.workspace-master-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: 16px;
+  align-items: start;
+}
+
+.workspace-rhp {
+  border: 1px solid var(--stack-border);
+  border-radius: 4px;
+  box-shadow: 0 2px 1.5px rgb(0 0 0 / 16%);
+}
+
+@media (max-width: 1100px) {
+  .workspace-master-detail {
+    grid-template-columns: 1fr;
+  }
 }
